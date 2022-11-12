@@ -43,8 +43,9 @@ public class SecteurActiviteServiceImplTest {
 		}
 		
 		
-		
-		//Count missions a make sure the return is  not null
+		/*
+		 * 
+		 * //Count missions a make sure the return is  not null
 		@Test
 		public void testcountSecteurActivite() {
 		long nbrms = secteurActiviteRepository.count();
@@ -52,6 +53,8 @@ public class SecteurActiviteServiceImplTest {
 		l.info("Le Nombre des secteurActivite est :");
 		l.info(nbrms);
 		}
+		
+		 */
 		
 		
 		
