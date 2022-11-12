@@ -6,7 +6,7 @@ RUN mvn clean install
 
 
 FROM openjdk:11.0
-WORKIR /app
+WORKDIR /app
 COPY --from=build /app/target/Uber.jar /app/
 EXPOSE 9090
 CDM [ "java","-jar","Uber.jar" ] && \
