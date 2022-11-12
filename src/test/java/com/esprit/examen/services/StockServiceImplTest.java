@@ -8,7 +8,8 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import static org.junit.Assert.assertNotNull;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -74,7 +75,12 @@ public class StockServiceImplTest {
 		stockService.deleteStock(savedStock.getIdStock());
 		assertNull(stockService.retrieveStock(savedStock.getIdStock()));
 	}
-	
-	
+	@Test
+	public void testupdateStock(){
+		Stock s = new Stock("stock test exam",10,100);
+		Assertions.assertNotNull(s);
+		stockService.updateStock(s);
+		l.info("Categorie updated successfuly !");
+	}
 
 }
