@@ -44,9 +44,10 @@ public class OperateurServiceImplTest {
 	@Test
 	public void testaddOperateur() { //Done
 
-		Operateur o = new Operateur("testNom2", "testPrenom2"); //null, "Safa", "Touil", "123", null
+		Operateur o = new Operateur("testNom4", "testPrenom4"); //null, "Safa", "Touil", "123", null
 	    Assertions.assertNotNull(o, "Champ vide !!"); //Vérifier si les champs vides
 	    op.addOperateur(o); //Ajouter alors l'opérateur
+	    l.info("operateur ajouté avec succès ");
 			
 	}
 	
