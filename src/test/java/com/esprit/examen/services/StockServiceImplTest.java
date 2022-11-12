@@ -74,13 +74,7 @@ public class StockServiceImplTest {
 		stockService.deleteStock(savedStock.getIdStock());
 		assertNull(stockService.retrieveStock(savedStock.getIdStock()));
 	}
-	//Count missions a make sure the return is  not null
-	@Test
-	public void testcountStocks() {
-		long nbrms = stockRepository.count();
-		assertNotNull(nbrms);
-		l.info("Le Nombre des secteurActivite est :");
-		l.info(nbrms);
-	}
+	
+	
 
 }
