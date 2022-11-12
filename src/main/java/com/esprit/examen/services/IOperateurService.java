@@ -6,11 +6,11 @@ import com.esprit.examen.entities.Operateur;
 
 public interface IOperateurService {
 
-	List<Operateur> retrieveAllOperateurs();
+	List<Operateur> retrieveAllOperateurs(); //Done
 
-	Operateur addOperateur(Operateur o);
+	Operateur addOperateur(Operateur o); //Done
 
-	void deleteOperateur(Long id);
+	void deleteOperateur(Long id); //Done
 
 	Operateur updateOperateur(Operateur o);
 

@@ -70,8 +70,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
+		
+
 	</dependencies>
 
+ 
 	<build>
 		<plugins>
 			<plugin>
@@ -100,5 +103,14 @@
 			</plugin>
 		</plugins>
 	</build>
+
+     <distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+            <url>http://192.168.1.121:8081/#browse/browse:maven-releases</url>
+		</repository>
+	</distributionManagement>
+
+	
 
 </project>
