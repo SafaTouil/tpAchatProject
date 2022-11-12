@@ -106,8 +106,8 @@
 
      <distributionManagement>
 		<repository>
-			<id>nexus-releases</id>
-            <url>http://192.168.1.121:8081/#browse/browse:maven-releases</url>
+			<id>deploymentRepo</id>
+            <url>http://192.168.1.121:8081/repository/nexus/</url>
 		</repository>
 	</distributionManagement>
 
