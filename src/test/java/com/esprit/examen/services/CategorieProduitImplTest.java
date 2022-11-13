@@ -49,11 +49,7 @@ public class CategorieProduitImplTest {
 	
 	@Test
 	public void testdeleteCategorieProduit(){
-<<<<<<< HEAD
 		CategorieProduit c = new CategorieProduit("codeCatD","libCatD");
-=======
-		CategorieProduit c = new CategorieProduit("codeCat1","libCat1");
->>>>>>> 1bde5222c649ef686087a46dc2ea6f528ad10499
 		cp.addCategorieProduit(c);
 		cp.deleteCategorieProduit(c.getIdCategorieProduit());
 		l.info("Categorie deleted successfuly !");
