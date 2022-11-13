@@ -1,4 +1,3 @@
-FROM openjdk:8-jdk-alpine
-EXPOSE 8089
-ADD ./target/tpAchatProject-1.0.jar tpAchatProject.jar 
-ENTRYPOINT ["java","-jar","/tpAchatProject.jar"]
+FROM adoptopenjdk/openjdk11
+COPY target/tpAchatProject-1.0.jar tpAchatProject-1.0.jar
+ENTRYPOINT ["java","-jar","/tpAchatProject-1.0.jar"]"]
