@@ -34,8 +34,7 @@ public class CategorieProduitImplTest {
 	public void testretrieveAllCategorieProduits(){
 		List<CategorieProduit> listCat = cp.retrieveAllCategorieProduits();
 		long size = listCat.size();
-		//Assertions.assertNotNull(size);
-		assertThat(size).isNotNull();
+		assertThat(listCat).size().isGreaterThan(0);
 		l.info("Le Size des CategorieProduit est : " + size);
 	}
 	
@@ -49,11 +48,7 @@ public class CategorieProduitImplTest {
 	
 	@Test
 	public void testdeleteCategorieProduit(){
-<<<<<<< HEAD
 		CategorieProduit c = new CategorieProduit("codeCatD","libCatD");
-=======
-		CategorieProduit c = new CategorieProduit("codeCat1","libCat1");
->>>>>>> 1bde5222c649ef686087a46dc2ea6f528ad10499
 		cp.addCategorieProduit(c);
 		cp.deleteCategorieProduit(c.getIdCategorieProduit());
 		l.info("Categorie deleted successfuly !");
