@@ -49,8 +49,9 @@ public class CategorieProduitImplTest {
 	
 	@Test
 	public void testdeleteCategorieProduit(){
-		Long id = (long) 2;
-		cp.deleteCategorieProduit(id);
+		CategorieProduit c = new CategorieProduit("codeCatD","libCatD");
+		cp.addCategorieProduit(c);
+		cp.deleteCategorieProduit(c.getIdCategorieProduit());
 		l.info("Categorie deleted successfuly !");
 	}
 
@@ -64,10 +65,11 @@ public class CategorieProduitImplTest {
 
 	@Test
 	public void testretrieveCategorieProduit(){
-		Long id = (long) 3;
-		CategorieProduit c = cp.retrieveCategorieProduit(id);
-		Assertions.assertNotNull(c);
-		l.info("RetrieveCatProduit : " + c);
+		CategorieProduit c = new CategorieProduit("codeCatRetrieve","libCatRetrieve");
+		cp.addCategorieProduit(c);
+		CategorieProduit cr = cp.retrieveCategorieProduit(c.getIdCategorieProduit());
+		Assertions.assertNotNull(cr);
+		l.info("RetrieveCatProduit : " + cr);
 	}
 
 	
