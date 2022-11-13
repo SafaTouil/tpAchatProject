@@ -80,7 +80,7 @@ public class StockServiceImplTest {
 		Stock s = new Stock("stock test exam",10,100);
 		Assertions.assertNotNull(s);
 		stockService.updateStock(s);
-		l.info("Categorie updated successfuly !");
+		l.info("stock updated successfuly !");
 	}
 
 }
