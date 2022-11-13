@@ -1,5 +1,6 @@
 package com.esprit.examen.services;
 
+import static org.assertj.core.api.Assertions.assertThat;
 //import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import org.junit.jupiter.api.Assertions;
@@ -33,7 +34,8 @@ public class CategorieProduitImplTest {
 	public void testretrieveAllCategorieProduits(){
 		List<CategorieProduit> listCat = cp.retrieveAllCategorieProduits();
 		long size = listCat.size();
-		Assertions.assertNotNull(size);
+		//Assertions.assertNotNull(size);
+		assertThat(size).isNotNull();
 		l.info("Le Size des CategorieProduit est : " + size);
 	}
 	
